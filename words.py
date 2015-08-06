@@ -25,13 +25,13 @@ print("Mnemonic:\t" + mnemonic + "\n\n")
 import collections
 
 def addWordToDictionary(dict, word, meaning, mnemonic):
-	word = word.lower();
-	meaning = meaning;
-	mnemonic = mnemonic;
+	word = word.lower()
+	meaning = meaning
+	mnemonic = mnemonic
 	dict[word] = [meaning, mnemonic]
 	
 def displayWordMeaning(dict, word):
-	word = word.lower();
+	word = word.lower()
 	print("Word:\t\t" + word)
 	print("Meaning:\t" + str(dict[word][0]))
 	print("Mnemonic:\t" + str(dict[word][1]))
